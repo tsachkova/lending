@@ -1,0 +1,126 @@
+.blog {
+    padding-top: 121px;
+    padding-bottom: 110px;
+    background-color: #F9F9FA;
+
+    &__header {
+        justify-content: space-between;
+        margin-bottom: 68px;
+
+        .blog__header-title {
+            @include title;
+            margin-top: 17px;
+        }
+
+        .blog__header-title:after {
+            @include line;
+            right: -240px;
+        }
+
+        .blog__header-button {
+            @include btn(#6B97BB, 258px);
+
+            a {
+                @include btn-a;
+            }
+        }
+    }
+
+    .blog__body {
+        margin-left: -10px;
+        align-items: flex-start;
+
+        &-item-wrapper {
+            padding: 10px;
+            margin-right: 8px;
+        }
+
+        &-item {
+            border: 1px #CFDAE3 solid;
+
+            .item-text-wrapper {
+                padding-left: 20px;
+                padding-right: 20px;
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 130%;
+            }
+
+            img {
+                width: 380px;
+                text-align: center;
+                vertical-align: middle;
+                margin-bottom: 28px;
+            }
+
+            .flex-container {
+                justify-content: space-between;
+            }
+
+            .blog__body-item-info {
+                margin-bottom: 20px;
+
+                div {
+                    a {
+                        padding: 6px 11px;
+                    }
+
+                    .news {
+                        background-color: #CFDAE3;
+                    }
+
+                    .article {
+                        background-color: #D9D4D4;
+                    }
+                }
+            }
+
+            .blog__body-item-info-text {
+                font-size: 20px;
+                line-height: 120%;
+                text-transform: none;
+                margin-bottom: 13px;
+
+                a:hover {
+                    color: #6B97BB
+                }
+            }
+
+            .blog__body-item-icons {
+                span {
+                    margin-left: 22px;
+                    position: relative;
+                }
+
+                span:last-child {
+                    margin-left: 30px;
+                }
+
+                span:before {
+                    position: absolute;
+                    font-family: 'icomoon';
+                    font-size: 14px;
+                    line-height: 16px
+                }
+
+                .viewing:before {
+                    position: absolute;
+
+                    content: "\e903";
+                    left: -21px;
+                }
+
+                .coment:before {
+                    position: absolute;
+                    content: "\e90e";
+                    left: -21px;
+                }
+            }
+        }
+
+        &-item-wrapper:hover {
+            padding: 9px;
+            border: 1px #CFDAE3 solid;
+        }
+    }
+}

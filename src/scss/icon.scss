@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('./../fonts/icomoon.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-lupa :before {
+    content: "\e914";
+    opacity: 0.2;
+}
+
+._icon-Arrowleft:before {
+    content: "\e900";
+}
+
+._icon-ArrowRigth:before {
+    content: "\e901";
+}
+
+._icon-download:before {
+    content: "\e902";
+}
+
+._icon-eye:before {
+    content: "\e903";
+}
+
+._icon-heart:before {
+    content: "\e905";
+}
+
+._icon-lupa1:before {
+    content: "\e907";
+}
+
+._icon-man:before {
+    content: "\e90d";
+}
+
+._icon-massage:before {
+    content: "\e90e";
+}
+
+._icon-teres:before {
+    content: "\e910";
+}

@@ -1,0 +1,584 @@
+@media (max-width: 1850px) {
+    .main-slider__text-switch {
+        display: none;
+    }
+}
+
+@media (max-width: 1730px) {
+    .fitness-slider {
+        .fitness-slider__description-button {
+            margin-bottom: 17px;
+        }
+
+        .body-wrapper {
+            width: 98%;
+        }
+
+        .fitness-slider__body-wrapper {
+            bottom: 4%;
+
+            .fitness-slider__body-button {
+                position: absolute;
+                top: -31%;
+                left: 74%;
+                right: 0;
+            }
+
+            .fitness-slider__body {
+
+                .slick-arrow {
+                    top: -21%;
+                }
+
+                .slick-next {
+                    left: 85%;
+                }
+
+                .slick-prev {
+                    left: 78%;
+                }
+
+                img {
+                    width: 90%;
+                }
+            }
+        }
+
+        .fitness-slider__description {
+            .fitness-slider__description-header {
+                width: 85%;
+                font-size: 40px;
+                margin-bottom: 15px;
+            }
+
+            .fitness-slider__description-text {
+                width: 85%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .blog {
+        .body-wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1560px) {
+    .fitness-slider {
+
+        .fitness-slider__description {
+            padding-left: 45px;
+        }
+
+        .fitness-slider__body-wrapper {
+            .fitness-slider__body-button {
+                top: 68%;
+                left: 70%;
+            }
+
+            .fitness-slider__body {
+                width: 70%;
+
+                .slick-arrow {
+                    top: 81%;
+                }
+
+                .slick-next {
+                    left: 110%;
+                }
+
+                .slick-prev {
+                    left: 101%;
+                }
+            }
+        }
+
+        &__lupa {
+            width: 80px;
+            height: 80px;
+            top: 59%;
+            left: 10%;
+
+            img {
+                width: 40px;
+                top: 20px;
+                left: 20px;
+            }
+        }
+    }
+
+    header {
+        .menu {
+            li {
+                margin-left: 10px;
+            }
+
+            .mark {
+                margin-left: 10px;
+            }
+
+            li:first-child {
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .main-slider {
+        .main-slider__text {
+            top: 30%;
+            left: 5%;
+
+            .main-slider__text-header {
+                font-size: 54px;
+            }
+
+            .main-slider__text-description {
+                font-size: 25px;
+            }
+
+            .main-slider__text-icons {
+                right: -22%;
+            }
+        }
+
+        .main-slider__body .slick-prev:before {
+            left: 142%;
+        }
+    }
+
+    .footer {
+        .footer__item {
+            margin-right: 30px;
+            width: 15%;
+        }
+
+        .footer__item-button>div {
+            width: 98%;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .fitness-slider {
+        .fitness-slider__description {
+            .fitness-slider__description-header {
+                font-size: 36px;
+            }
+        }
+
+        .fitness-slider__body-wrapper {
+            width: 100%;
+            position: static;
+
+            .fitness-slider__body-button {
+                top: 62%;
+                left: 59%;
+            }
+
+            .fitness-slider__body {
+                width: 91%;
+
+                .slick-arrow {
+                    top: -37%;
+                }
+
+                .slick-next {
+                    left: calc(65% + 73px);
+                }
+
+                .slick-prev {
+                    left: 65%;
+                }
+            }
+        }
+    }
+
+    header {
+        .wrapper {
+            display: block;
+        }
+
+        .menu {
+            padding: 26px 3%;
+
+            li {
+                margin-left: 2%;
+            }
+        }
+
+        .icons {
+            margin: 0;
+            position: absolute;
+            right: 10px;
+            top: 16px;
+        }
+
+        .header__logo {
+            position: absolute;
+            top: 41px;
+            right: 49px;
+        }
+    }
+
+    .blog {
+        .blog__body {
+            display: block;
+
+            .blog__body-item {
+                text-align: center;
+
+                img {
+                    width: 70%;
+                }
+
+                &-info {
+                    display: block;
+
+                    &-date {
+                        margin-top: 20px;
+                    }
+                }
+
+                .news,
+                .article {
+                    padding: 15px 106px;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer__item-button>div {
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1140px) {
+    .fitness-slider {
+        &__header {
+            margin-left: 85px;
+        }
+
+        .body-wrapper>.flex-container {
+            display: block;
+        }
+
+        &__show {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__lupa {
+            display: none;
+        }
+
+        .fitness-slider__description {
+            margin-top: 150px;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .fitness-slider__body-wrapper {
+            position: absolute;
+            bottom: 17%;
+            left: 0;
+
+            .fitness-slider__body-button {
+                display: none;
+            }
+
+            .fitness-slider__body {
+
+                .slick-prev:before,
+                .slick-next:before {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .main-slider {
+        margin-top: 0;
+
+        .main-slider__body .slick-prev:before {
+            left: 117%;
+        }
+    }
+
+    header {
+        margin-top: 0;
+
+        .menu {
+            display: block;
+            width: 70%;
+
+            li {
+                text-align: center;
+                border: 1px #000 solid;
+                margin-left: 0;
+                background-color: #98A4AE;
+            }
+
+            .mark {
+                margin: 0;
+
+                span {
+                    color: #000;
+                }
+            }
+
+            a:hover {
+                color: #40474E;
+            }
+
+            li:hover {
+                background-color: #AA182C;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            li:first-child:hover {
+                a {
+                    color: #40474E;
+                }
+
+            }
+
+            li:first-child {
+                background-color: #fff;
+            }
+        }
+    }
+
+    .blog {
+        .blog__header-title:after {
+            display: none;
+        }
+    }
+
+    .instagram {
+        .instagram-wrapper {
+            width: 610px;
+
+            .instagram__body {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .instagram__header::after,
+            .instagram__header::before {
+                display: none;
+            }
+        }
+    }
+
+    .question .question__form {
+        left: 2%;
+    }
+
+    .footer {
+        .footer__item-wrapper {
+            flex-wrap: wrap;
+            padding-left: 12%;
+
+            .footer__item {
+                width: 25%;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .question {
+        .wrapper {
+            padding-left: 30px;
+        }
+
+        .question__form {
+            width: 60%;
+
+            button {
+                width: 70%;
+            }
+        }
+    }
+
+    .main-slider {
+        .main-slider__text {
+            .main-slider__text-header {
+                font-size: 30px;
+            }
+
+            .main-slider__text-description {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .fitness-slider {
+        &__body-wrapper {
+            display: none;
+        }
+
+        &__show {
+            .slick-arrow {
+                position: absolute;
+                top: 81%;
+                width: 32px;
+            }
+
+            .slick-prev {
+                left: 77%;
+                z-index: 1;
+            }
+
+            .slick-next {
+                left: 85%;
+            }
+
+            .slick-next:before {
+                content: "\e901";
+                left: 0;
+            }
+
+            .slick-prev:before {
+                content: "\e900";
+                left: 4px;
+            }
+
+            .slick-next:before,
+            .slick-prev:before {
+                @include icon(6px);
+                color: #fff;
+            }
+
+            .slick-prev:hover:after,
+            .slick-next:hover:after {
+                color: #AA182C;
+            }
+        }
+
+        .fitness-slider__description {
+            margin-top: 18px;
+        }
+    }
+
+    .footer {
+        .footer__item-wrapper {
+            .footer__item {
+                width: 40%;
+            }
+
+            .footer__item-contact>div:first-child {
+                margin-bottom: 25px;
+            }
+        }
+
+        .copiright {
+            display: block;
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+
+            .language {
+                margin-left: 0;
+            }
+
+            .artjoker {
+                width: 292px;
+                justify-content: space-between;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        .menu__button {
+            display: block;
+            margin: 44px 20px;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .header__logo {
+            top: 12px;
+            left: 119px;
+        }
+
+        .icons {
+            top: 41px;
+        }
+    }
+
+    .main-slider {
+        .main-slider__body .slick-prev:before {
+            left: 99%;
+        }
+    }
+
+    .instagram {
+        .instagram-wrapper {
+            width: 100%;
+
+            .instagram__body {
+                display: block;
+
+                img {
+                    width: 98%;
+                }
+
+                &-item:last-child {
+                    width: calc(100% - 33px);
+                    height: auto;
+                    padding-top: 10%;
+                    padding-bottom: 30%;
+
+                    .instagram__body-info-circle {
+                        height: 100px;
+                        width: 100px;
+
+                        img {
+                            top: 8px;
+                            left: 9px;
+                            width: 65%;
+                        }
+                    }
+
+                    .instagram__body-info-name {
+                        font-size: 30px;
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+                    }
+
+                    .instagram__body-info-button {
+                        width: 249px;
+                    }
+                }
+            }
+        }
+    }
+}

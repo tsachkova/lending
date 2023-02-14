@@ -1,0 +1,134 @@
+.fitness-slider {
+    margin-bottom: 114px;
+    position: relative;
+
+    &__header {
+        @include title;
+        margin-left: 226px;
+        margin-top: 118px;
+        margin-bottom: 78px;
+    }
+
+    &__header:after {
+        @include line;
+        left: 224px;
+    }
+
+    &__show {
+        width: calc(56% - 5px);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__lupa {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        background-color: rgba(255, 255, 250, 0.3);
+        top: 695px;
+        left: 187px;
+
+        img {
+            position: absolute;
+            top: 29px;
+            left: 29px;
+        }
+    }
+
+    .fitness-slider__body-wrapper {
+        position: absolute;
+        width: 1150px;
+        bottom: 56px;
+        right: calc(-10% - 10px);
+
+        .fitness-slider__body {
+            width: 1100px;
+
+            .slick-arrow {
+                position: absolute;
+                top: -473px;
+                width: 32px;
+            }
+
+            .slick-prev {
+                left: 55%;
+            }
+
+            .slick-next {
+                left: 62%;
+            }
+
+            .slick-next:before {
+                content: "\e901";
+                left: 0;
+            }
+
+            .slick-prev:before {
+                content: "\e900";
+                left: 4px;
+            }
+
+            .slick-next:before,
+            .slick-prev:before {
+                @include icon(0px);
+                color: #40474E;
+            }
+
+            .slick-prev:hover:after,
+            .slick-next:hover:after {
+                color: #AA182C;
+            }
+        }
+
+        .fitness-slider__body-button {
+            position: absolute;
+            top: -505px;
+            right: 413px;
+
+            &>div {
+                height: 52px;
+                width: 52px;
+                border: 1px #98A4AE solid;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    &__body {
+        max-width: 1300px;
+    }
+
+    &__description {
+        padding-left: 82px;
+
+        &-button {
+            @include btn(#6B97BB, 284px);
+            margin-bottom: 82px;
+
+            a {
+                @include btn-a
+            }
+        }
+
+        &-header {
+            width: 65%;
+            font-size: 44px;
+            line-height: 130%;
+            font-weight: 400;
+            margin-bottom: 43px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 140%;
+            width: 60%;
+
+            p {
+                margin-bottom: -8px;
+            }
+        }
+    }
+}
