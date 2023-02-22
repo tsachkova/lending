@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./zoomy0.5/zoomy0.5.css">
     <script defer src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script defer src="./zoomy0.5/jquery.zoomy0.5.min.js"></script>
     <script defer src="./js/main.js"></script>
-
 
 
 
@@ -47,8 +47,6 @@
             <a class="teresa" href=""></a>
             <a class="heart" href=""><span>10</span></a>
             <a class="man" href=""></a>
-            <!-- <a href=""><span></span></a><a href=""><span></span></a><a
-                href=""><span></span></a></div> -->
         </div>
     </div>
 </header>
@@ -99,18 +97,57 @@
         <div class="flex-container">
 
             <div class="fitness-slider__show">
-                <div class="fitness-slider__item"><img src="./img/f-slide.jpg" alt=""></div>
-                <div class="fitness-slider__item"><img src="./img/f-slide2.jpg" alt=""></div>
-                <div class=" fitness-slider__item"><img src="./img/fitnes.jpg" alt=""></div>
-                <div class="fitness-slider__item"><img src="./img/f-slide.jpg" alt=""></div>
-                <div class="fitness-slider__item"><img src="./img/f-slide2.jpg" alt=""></div>
-                <div class=" fitness-slider__item"><img src="./img/fitnes.jpg" alt=""></div>
+                <div class="fitness-slider__item">
+                    <div class="img-wrapper">
+                        <a href="./img/f-slide-big.jpg" class="zoom">
+                            <img class="fitness-slider__show-img" src="./img/f-slide.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="fitness-slider__item">
+                    <div class="img-wrapper">
+                        <a href="./img/f-slide2-big.jpg" class="zoom ">
+                            <img class="fitness-slider__show-img" src="./img/f-slide2.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class=" fitness-slider__item">
+                    <div class="img-wrapper">
+                        <a href="./img/f-slide3-big.jpg" class="zoom ">
+                            <img class="fitness-slider__show-img" src="./img/f-slide3.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="fitness-slider__item">
+                    <div class="img-wrapper">
+                        <a href="./img/f-slide-big.jpg" class="zoom ">
+                            <img class="fitness-slider__show-img" src="./img/f-slide.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="fitness-slider__item">
+                    <div class="img-wrapper">
+                        <a href="./img/f-slide2-big.jpg" class="zoom ">
+                            <img class="fitness-slider__show-img" src="./img/f-slide2.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class=" fitness-slider__item">
+                    <div class="img-wrapper">
+                        <a href="./img/f-slide3-big.jpg" class="zoom ">
+                            <img class="fitness-slider__show-img" src="./img/f-slide3.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
             </div>
+
             <div class="fitness-slider__lupa">
                 <img src="./img/lupaPluse.png" alt="">
             </div>
+
             <div class="fitness-slider__description">
                 <div class="fitness-slider__description-button"><a href="">СМОТРЕТЬ ВСЕ ПРОЕКТЫ</a></div>
+
                 <div class="fitness-slider__description-header">
                     Сеть фитнес-центров Start&Finish
                 </div>
@@ -118,14 +155,10 @@
                     <p>Создали общий стиль для фасада и внутренней отделки</p>
                     <p>Еще несколько коротких предложений о том, что было сделано на проекте</p>
                 </div>
-
             </div>
+
         </div>
         <div class="fitness-slider__body-wrapper">
-            <div class="fitness-slider__body-button flex-container">
-                <div class="next-box"></div>
-                <div class="prev-box"></div>
-            </div>
             <div class="fitness-slider__body">
                 <div class="fitness-slider__nav"><img src="./img/f-slide.jpg" alt=""></div>
                 <div class="fitness-slider__nav"><img src="./img/f-slide2.jpg" alt=""></div>
@@ -297,8 +330,6 @@
                 </a>
                 <div class="instagram__body-info-name">@ceramica</div>
                 <div class="instagram__body-info-button"><a href="">Подписаться</a></div>
-
-
             </div>
         </div>
     </div>
@@ -336,8 +367,10 @@
                         <img src="./img/youtube.svg" alt="">
                     </a>
                 </div>
+                <img class="footer__button" src="./img/menu.png" alt="">
             </div>
             <div class="footer__item footer__item-nav">
+
                 <div class="footer__item-header">Ceramica</div>
                 <ul>
                     <li><a href="">О компании</a></li>
@@ -396,8 +429,6 @@
         </div>
     </div>
 </div>
-
-
 </body>
 
 </html>
