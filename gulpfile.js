@@ -144,6 +144,11 @@ export function ttfToWoff() {
         .pipe(gulp.dest(`${path.build.fonts}/`))
 }
 
+export function zoomy() {
+    return gulp.src('./src/zoomy0.5/**/*.*')
+        .pipe(gulp.dest('./dist/zoomy0.5/'))
+}
+
 const font = gulp.series(otfToTtf, ttfToWoff);
 
 export function watchFile() {
@@ -153,7 +158,7 @@ export function watchFile() {
     gulp.watch([path.watch.images], images)
 }
 
-const build = gulp.series(font, gulp.parallel(js, css, html, images));
+const build = gulp.series(font, gulp.parallel(js, css, html, images, zoomy));
 const watch = gulp.parallel(build, watchFile, browserSync);
 
 gulp.task('default', watch)

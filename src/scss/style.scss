@@ -68,10 +68,11 @@ a {
 }
 
 .body-wrapper {
-    width: 1920px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+
 }
 
 .flex-container {
@@ -79,6 +80,7 @@ a {
     justify-content: start;
     justify-items: flex-start;
 }
+
 
 @import 'icon.scss';
 @import 'font.scss';

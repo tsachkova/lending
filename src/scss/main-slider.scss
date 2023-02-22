@@ -1,6 +1,7 @@
 .main-slider {
     position: relative;
     margin-top: -9px;
+    overflow: hidden;
 
     .line {
         border-bottom: 1px #CFDAE3 solid;
@@ -14,7 +15,7 @@
         width: 73%;
         position: absolute;
         top: 439px;
-        left: 13.5%;
+        left: 11.5%;
         z-index: 1;
 
         &-header {
@@ -37,7 +38,7 @@
         &-icons {
             position: absolute;
             top: -101px;
-            right: 0px;
+            right: -72px;
 
             p {
                 margin-bottom: -8px;
