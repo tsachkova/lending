@@ -6,6 +6,10 @@
     .body-wrapper {
         width: 100%;
     }
+
+    .slick-dots {
+        bottom: 43px;
+    }
 }
 
 @media (max-width: 1730px) {
@@ -82,11 +86,29 @@
             width: 100%;
         }
     }
+
+    .main-slider {
+        .main-slider__text {
+            top: 30%;
+            left: 5%;
+
+            .main-slider__text-header {
+                font-size: 54px;
+            }
+
+            .main-slider__text-description {
+                font-size: 25px;
+            }
+
+            .main-slider__text-icons {
+                right: -22%;
+            }
+        }
+    }
 }
 
 @media (max-width: 1560px) {
     .fitness-slider {
-
         .fitness-slider__description {
             padding-left: 45px;
 
@@ -156,23 +178,6 @@
     }
 
     .main-slider {
-        .main-slider__text {
-            top: 30%;
-            left: 5%;
-
-            .main-slider__text-header {
-                font-size: 54px;
-            }
-
-            .main-slider__text-description {
-                font-size: 25px;
-            }
-
-            .main-slider__text-icons {
-                right: -22%;
-            }
-        }
-
         .main-slider__body .slick-prev:before {
             left: 142%;
         }
@@ -196,7 +201,6 @@
 
 @media (max-width: 1300px) {
     .fitness-slider {
-
         .fitness-slider__description {
             .fitness-slider__description-header {
                 font-size: 36px;
@@ -241,24 +245,37 @@
         }
 
         .menu {
-            padding: 26px 3%;
+            padding: 0;
+            padding-left: 100px;
 
             li {
                 margin-left: 2%;
+            }
+
+            li:first-child {
+                padding: 15px 20px 10px 20px;
             }
         }
 
         .icons {
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 119px;
             position: absolute;
-            right: 10px;
+            right: 0px;
             top: 16px;
+
+            a {
+                margin-left: 5px;
+                margin-bottom: 10px;
+            }
         }
 
         .header__logo {
             position: absolute;
-            top: 41px;
-            right: 49px;
+            top: 0px;
+            left: 11px;
         }
     }
 
@@ -374,6 +391,10 @@
         .main-slider__body .slick-prev:before {
             left: 117%;
         }
+
+        .main-slider__body .slick-dots {
+            bottom: 45px;
+        }
     }
 
     header {
@@ -418,6 +439,15 @@
 
             li:first-child {
                 background-color: #fff;
+            }
+        }
+
+        .icons {
+            width: 50px;
+            right: 10px;
+
+            a {
+                margin-bottom: 25px;
             }
         }
     }
@@ -504,7 +534,6 @@
         }
 
         .fitness-slider__show {
-
             .img-wrapper {
                 max-height: 493px;
                 max-width: 78%;
@@ -600,6 +629,8 @@
 
         .icons {
             top: 41px;
+            width: 300px;
+            right: -97px;
         }
     }
 
@@ -613,7 +644,7 @@
         }
 
         .main-slider__text-icons {
-            top: -28px;
+            top: -70px;
 
             img {
                 width: 20px;
@@ -719,7 +750,7 @@
             top: 34px;
 
             a {
-                margin-right: -1px;
+                margin-left: 8px;
                 font-size: 18px;
             }
 
@@ -736,6 +767,10 @@
     }
 
     .main-slider {
+        .main-slider__body .slick-dots {
+            display: none;
+        }
+
         .main-slider__text {
             .main-slider__text-header {
                 font-size: 18px;
@@ -894,10 +929,11 @@
 
                 .footer__button {
                     display: block;
-                    width: 100px;
+                    width: 72px;
                     position: absolute;
                     top: 16%;
                     left: 131%;
+                    height: 58%;
                 }
 
                 .item-logo-icons {
@@ -917,7 +953,6 @@
 
                     a {
                         text-transform: uppercase;
-
                     }
                 }
 
@@ -953,6 +988,17 @@
 }
 
 @media (max-width: 415px) {
+    header {
+        .icons {
+            right: -189px;
+
+            a {
+                margin-left: 0px;
+                margin-right: 10px;
+            }
+        }
+    }
+
     .main-slider {
         .main-slider__text {
             .main-slider__text-icons {

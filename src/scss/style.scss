@@ -3,6 +3,7 @@ body {
     font-family: 'Gotham Pro';
     font-weight: 400;
     color: #40474E;
+    margin: 0;
 }
 
 li {
@@ -62,8 +63,6 @@ a {
 
 .wrapper {
     max-width: 1470px;
-    padding-left: 10px;
-    padding-right: 10px;
     margin: 0 auto;
 }
 
@@ -72,7 +71,6 @@ a {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-
 }
 
 .flex-container {
@@ -80,7 +78,6 @@ a {
     justify-content: start;
     justify-items: flex-start;
 }
-
 
 @import 'icon.scss';
 @import 'font.scss';

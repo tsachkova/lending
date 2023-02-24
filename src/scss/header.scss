@@ -1,5 +1,11 @@
 header {
-    margin-top: -6px;
+    margin-bottom: 3px;
+
+    .header__logo {
+        img {
+            height: 95%;
+        }
+    }
 
     .menu__button {
         display: none;

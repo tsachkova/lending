@@ -16,7 +16,16 @@ function addMenuLenguage() {
 
 addMenuLenguage();
 
-$('.main-slider__body').slick();
+$('.main-slider__body').slick({
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 510,
+            settings: {
+                dots: false,
+            }
+        }],
+});
 
 $('.fitness-slider__show').slick({
     slidesToShow: 1,
@@ -32,6 +41,7 @@ $('.fitness-slider__show').slick({
             }
         }],
 });
+
 $('.fitness-slider__body').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -69,17 +79,17 @@ addMenuButton();
 $('.zoom').zoomy();
 
 function toggleLupa() {
+
     if (window.innerWidth > 1140) {
         let slideShow = document.querySelector('.fitness-slider__show');
-
 
         slideShow.addEventListener('mouseenter', (e) => {
             document.querySelector('.fitness-slider__lupa').style.display = "none";
         })
 
         slideShow.addEventListener('mouseleave', (e) => {
-            if (e.target == slideShow) {
 
+            if (e.target == slideShow) {
                 document.querySelector('.fitness-slider__lupa').style.display = "block";
             }
         })
@@ -92,7 +102,6 @@ function setFitnesImgHeight() {
 
     let imgWeidth = document.querySelector('.fitness-slider__show-img').offsetHeight;
     document.querySelector('.img-wrapper').style.height = imgWeidth;
-    console.log(imgWeidth);
 }
 
 setTimeout(setFitnesImgHeight, 500);
@@ -100,8 +109,6 @@ setTimeout(setFitnesImgHeight, 500);
 window.addEventListener('resize', (e) => {
     document.addEventListener('mousemove', function handler(e) {
         location.reload();
-        this.removeEventListener('mousemove', handler)
-
+        this.removeEventListener('mousemove', handler);
     })
-
 });

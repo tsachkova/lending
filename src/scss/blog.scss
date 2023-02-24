@@ -49,6 +49,7 @@
 
             img {
                 width: 380px;
+                height: 100%;
                 text-align: center;
                 vertical-align: middle;
                 margin-bottom: 28px;
@@ -106,7 +107,6 @@
 
                 .viewing:before {
                     position: absolute;
-
                     content: "\e903";
                     left: -21px;
                 }
