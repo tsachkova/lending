@@ -83,7 +83,9 @@
 
     .blog {
         .body-wrapper {
-            width: 100%;
+            width: calc(100% - 20px);
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 
@@ -162,6 +164,10 @@
     }
 
     header {
+        .flex-container {
+            justify-content: space-between;
+        }
+
         .menu {
             li {
                 margin-left: 10px;
@@ -183,14 +189,24 @@
         }
     }
 
+    .blog {
+        .blog__header {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
     .footer {
+        padding-left: 10px;
+        padding-right: 10px;
+
         .footer__item {
             margin-right: 30px;
             width: 15%;
         }
 
         .footer__item-button>div {
-            width: 98%;
+            width: 93%;
 
             &:after {
                 display: none;
@@ -280,8 +296,22 @@
     }
 
     .blog {
+        .body-wrapper {
+            margin-right: 0;
+            margin: 0 auto;
+
+            .wrapper {
+                width: 100%;
+            }
+        }
+
         .blog__body {
             display: block;
+            margin: 0 auto;
+
+            .blog__body-item-wrapper {
+                margin-right: 0;
+            }
 
             .blog__body-item {
                 text-align: center;
@@ -307,6 +337,16 @@
         }
     }
 
+    .question {
+        .wrapper {
+            text-align: center;
+        }
+
+        .question__form {
+            left: calc(50% - 368px);
+        }
+    }
+
     .footer {
         .footer__item-button>div {
             a {
@@ -316,13 +356,15 @@
     }
 }
 
-
-
 @media (max-width: 1140px) {
     .fitness-slider {
         .fitness-slider__show {
+
+            width: 100%;
+
             .img-wrapper {
-                max-width: 78%;
+                max-width: 94%;
+                margin: 0 auto;
             }
         }
 
@@ -338,10 +380,6 @@
             display: block;
         }
 
-        .fitness-slider__show {
-            width: 100%;
-        }
-
         .fitness-slider__description {
             margin-top: 200px;
 
@@ -353,7 +391,7 @@
         .fitness-slider__body-wrapper {
             position: absolute;
             bottom: 22%;
-            left: 0;
+            left: 2%;
 
             .fitness-slider__body-button {
                 display: none;
@@ -478,10 +516,6 @@
         .wrapper {
             overflow: hidden;
         }
-
-        .question__form {
-            left: 2%;
-        }
     }
 
     .footer {
@@ -493,6 +527,10 @@
                 width: 25%;
                 margin-top: 30px;
             }
+
+            .footer__item-button>div {
+                width: 145px;
+            }
         }
     }
 }
@@ -501,10 +539,19 @@
     .question {
         .wrapper {
             padding-left: 30px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            img {
+                width: 100%;
+            }
         }
 
         .question__form {
             width: 60%;
+            left: 11%;
+            padding-left: 10%;
+            padding-right: 10%;
 
             .question__form-header {
                 font-size: 38px;
@@ -534,11 +581,6 @@
         }
 
         .fitness-slider__show {
-            .img-wrapper {
-                max-height: 493px;
-                max-width: 78%;
-            }
-
             .slick-arrow {
                 position: absolute;
                 top: 66%;
@@ -583,8 +625,11 @@
 
     .footer {
         .footer__item-wrapper {
+            padding-left: 18%;
+
             .footer__item {
                 width: 40%;
+
             }
 
             .footer__item-contact>div:first-child {
@@ -629,8 +674,8 @@
 
         .icons {
             top: 41px;
-            width: 300px;
-            right: -97px;
+            width: 168px;
+            right: 0px;
         }
     }
 
@@ -663,15 +708,20 @@
             .instagram__body {
                 display: block;
 
+                .instagram__body-item {
+                    text-align: center;
+                }
+
                 img {
                     width: 98%;
                 }
 
                 &-item:last-child {
-                    width: calc(100% - 33px);
+                    width: calc(98% - 20px);
                     height: auto;
                     padding-top: 10%;
                     padding-bottom: 30%;
+                    margin: 0 auto;
 
                     .instagram__body-info-circle {
                         height: 100px;
@@ -850,7 +900,7 @@
         .blog__header-title:after {
             display: block;
             width: 29%;
-            top: 8px;
+            top: 11px;
             left: 203px;
         }
 
@@ -888,6 +938,10 @@
 
             button:after {
                 display: none;
+            }
+
+            button {
+                width: 151px;
             }
         }
     }
@@ -990,7 +1044,7 @@
 @media (max-width: 415px) {
     header {
         .icons {
-            right: -189px;
+            width: 109px;
 
             a {
                 margin-left: 0px;
