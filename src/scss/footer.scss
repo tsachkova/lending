@@ -33,6 +33,10 @@
         a {
             @include footer;
         }
+
+        a:hover {
+            text-decoration: underline
+        }
     }
 
     .footer__item-button {
@@ -44,11 +48,16 @@
 
             a {
                 @include btn-a;
+                padding-top: 18px;
+            }
+
+            a:hover {
+                text-decoration: none;
             }
         }
 
         .see {
-            margin-bottom: 28px;
+            margin-bottom: 23px;
             background-color: #6B97BB;
             border: 1px #6B97BB solid;
         }
@@ -71,17 +80,18 @@
         margin-right: 73px;
 
         .item-logo-icons {
-            padding-top: 32px;
+            padding-top: 25px;
 
             img {
                 width: 25px;
             }
 
-            a {
+            span {
                 margin-right: 25px;
+                cursor: pointer;
             }
 
-            a:last-child {
+            span:last-child {
                 margin-right: 0;
             }
         }

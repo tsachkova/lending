@@ -66,12 +66,12 @@
 
             .slick-arrow {
                 position: absolute;
-                top: -473px;
+                top: -463px;
                 width: 32px;
             }
 
             .slick-prev {
-                left: 55%;
+                left: 55.5%;
             }
 
             .slick-next {
@@ -125,7 +125,7 @@
             position: relative;
 
             a {
-                @include btn-a
+                @include btn-a;
             }
         }
 

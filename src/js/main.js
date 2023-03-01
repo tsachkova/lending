@@ -1,16 +1,23 @@
 function addMenuLenguage() {
-    let language = document.querySelector('.language');
-    let languageP = language.previousElementSibling;
-    let languageSpan = languageP.previousElementSibling;
+    let language = document.querySelector('.menu__language');
+    let languageP = language.querySelector('p');
+    let languageSpan = language.querySelector('span');
 
     language.addEventListener("click", (e) => {
         languageP.classList.toggle('visible');
     })
 
     languageP.addEventListener('click', (e) => {
+
         let spanText = languageSpan.innerHTML;
         languageSpan.innerHTML = languageP.innerHTML;
         languageP.innerHTML = spanText;
+    })
+
+    language.closest('li').addEventListener('mouseleave', (e) => {
+        if (languageP.classList.contains('visible')) {
+            languageP.classList.remove('visible')
+        }
     })
 }
 
@@ -40,6 +47,35 @@ $('.fitness-slider__show').slick({
                 arrows: true,
             }
         }],
+});
+
+$('.blog__body').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    arrows: false,
+    dots: false,
+    responsive: [
+        {
+            breakpoint: 1240,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 700,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 490,
+            settings: {
+                slidesToShow: 1,
+            }
+        },
+    ],
 });
 
 $('.fitness-slider__body').slick({

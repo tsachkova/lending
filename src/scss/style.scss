@@ -15,7 +15,16 @@ a {
     color: #40474E;
 }
 
+i:before {
+    font-style: normal;
+    cursor: pointer;
+}
+
 @mixin btn-a {
+    display: inline-block;
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 15px;
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
@@ -23,8 +32,6 @@ a {
 }
 
 @mixin btn($color, $width) {
-    padding-top: 15px;
-    padding-bottom: 15px;
     color: $color;
     width: $width;
     border: 1px $color solid;

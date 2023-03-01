@@ -1,6 +1,6 @@
 .question {
     padding-top: 122px;
-    padding-bottom: 116px;
+    padding-bottom: 111px;
     background-color: #F9F9FA;
     position: relative;
 
@@ -10,7 +10,7 @@
         padding: 80px 137px 105px 112px;
         background-color: #fff;
         top: 217px;
-        right: 335px;
+        right: 291px;
 
         &-header {
             font-size: 44px;
@@ -80,8 +80,8 @@
 
         button {
             background-color: #6B97BB;
-            @include btn(#fff, 470px);
             @include btn-a;
+            @include btn(#fff, 470px);
             color: #fff;
             letter-spacing: 1px;
             text-align-last: left;
@@ -94,5 +94,16 @@
             @include icon(17px);
             right: 21px;
         }
+    }
+
+    .question__form:after {
+        content: "";
+        width: 690px;
+        height: 690px;
+        border: 1px #CFDAE3 solid;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        transform: rotate(15deg);
     }
 }
