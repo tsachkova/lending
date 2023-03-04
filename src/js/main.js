@@ -115,7 +115,6 @@ addMenuButton();
 $('.zoom').zoomy();
 
 function toggleLupa() {
-
     if (window.innerWidth > 1140) {
         let slideShow = document.querySelector('.fitness-slider__show');
 
@@ -135,16 +134,34 @@ function toggleLupa() {
 toggleLupa();
 
 function setFitnesImgHeight() {
-
-    let imgWeidth = document.querySelector('.fitness-slider__show-img').offsetHeight;
-    document.querySelector('.img-wrapper').style.height = imgWeidth;
+    document.querySelector('.zoom').style.width = '100%';
+    document.querySelector('.zoom').style.height = '100%';
+    let imgHeight = document.querySelector('.fitness-slider__show-img').offsetWidth;
+    document.querySelector('.img-wrapper').style.height = imgHeight / 1.325 + 'px';
 }
 
-setTimeout(setFitnesImgHeight, 500);
+function setElementWidth() {
+    let elementWidth = document.querySelector('.instagram__body-info').offsetWidth;
+    document.querySelector('.instagram__body-info').style.height = elementWidth + 'px';
+}
+
+if (window.innerWidth < 700) {
+    setTimeout(setElementWidth, 200);
+}
 
 window.addEventListener('resize', (e) => {
     document.addEventListener('mousemove', function handler(e) {
-        location.reload();
+        let zoomyDiv = document.querySelector('.zoomy');
+        zoomyDiv.outerHTML = '';
+        setTimeout($('.zoom').zoomy());
+        setTimeout(setFitnesImgHeight, 200);
+        if (window.innerWidth < 700) {
+            setTimeout(setElementWidth, 200);
+
+        } else {
+            document.querySelector('.instagram__body-info').style.height = '280px'
+        }
+
         this.removeEventListener('mousemove', handler);
     })
 });
