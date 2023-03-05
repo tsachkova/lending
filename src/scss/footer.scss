@@ -79,11 +79,17 @@
     .footer__item-logo {
         margin-right: 73px;
 
+        &>img {
+            margin: 0;
+            vertical-align: bottom;
+        }
+
         .item-logo-icons {
-            padding-top: 25px;
+            padding-top: 40px;
 
             img {
-                width: 25px;
+                width: 20px;
+                height: 100%;
             }
 
             span {

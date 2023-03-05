@@ -48,7 +48,6 @@
             }
 
             .fitness-slider__body {
-
                 .slick-arrow {
                     top: -19%;
                 }
@@ -701,12 +700,18 @@
         .main-slider__text-icons {
             top: -32px;
 
-            img {
-                width: 20px;
-            }
-
             div {
-                margin-bottom: -3px;
+                margin-bottom: 8px;
+
+                img {
+                    width: 20px;
+                }
+
+                .youtube {
+                    img {
+                        width: 20px;
+                    }
+                }
             }
         }
     }
@@ -1125,6 +1130,12 @@
 
                 img {
                     width: 14px;
+                }
+
+                .youtube {
+                    img {
+                        width: 14px;
+                    }
                 }
 
                 div {

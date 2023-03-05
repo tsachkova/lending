@@ -14,12 +14,13 @@
     .main-slider__text {
         width: 73%;
         position: absolute;
-        top: 439px;
+        top: 382px;
         left: 11.5%;
         z-index: 1;
 
         &-header {
             font-size: 86px;
+            font-weight: 400;
             line-height: 114%;
             color: #fff;
             letter-spacing: 1px;
@@ -37,18 +38,35 @@
 
         &-icons {
             position: absolute;
-            top: -79px;
+            top: -19px;
             right: -72px;
 
+
             div {
-                cursor: pointer;
-                margin-bottom: 17px;
+                margin-bottom: 25px;
+
+                a {
+                    display: inline-block;
+                }
+
+                img {
+                    width: 27px;
+                    vertical-align: bottom;
+                    height: 100%;
+
+                }
+            }
+
+            .youtube {
+                img {
+                    width: 32px;
+                }
             }
         }
 
         &-switch {
             position: absolute;
-            bottom: -43%;
+            bottom: -36%;
             right: calc(50% - 52px);
             height: 47px;
             width: 26px;

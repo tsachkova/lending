@@ -63,6 +63,13 @@
 
             img {
                 height: 100%;
+                cursor: pointer;
+            }
+
+            .slick-current {
+                img {
+                    cursor: default;
+                }
             }
 
             .slick-arrow {

@@ -46,10 +46,12 @@ header {
             margin-right: 76px;
             text-align: center;
             width: 158px;
+            height: 38px;
 
             a {
                 @include btn-a;
-                padding-top: 17px;
+                padding-top: 15px;
+                padding-bottom: 8px;
             }
         }
 
@@ -99,7 +101,6 @@ header {
         margin-left: 70px;
         margin-top: 35px;
         font-family: 'icomoon';
-        font-size: 22px;
         font-style: normal;
 
         i {
@@ -137,14 +138,17 @@ header {
 
         .lupa:before {
             content: "\e907";
+            font-size: 19px;
         }
 
         .teresa:before {
             content: "\e910";
+            font-size: 22px;
         }
 
         .heart:before {
             content: "\e905";
+            font-size: 20px;
         }
 
         .heart:after {
@@ -162,6 +166,7 @@ header {
 
         .man:before {
             content: "\e90d";
+            font-size: 20px;
         }
     }
 
